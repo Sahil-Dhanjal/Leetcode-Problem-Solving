@@ -16,6 +16,14 @@ public:
 // 5. After the loop end if there is still any elements left in any array that will be added by next 2 while loop.
 // Time complexity: O(m+n).
     
+// AN ANOTHER APPROACH
+// 1. Make a New vector nums with size (n+m)
+// 2. if there were no elements in nums2, simply return as there's nothing to do to nums1
+// 3. Otherwise, while both the pointers are withing their limits
+// 4. We merge sort exactly how we conventionaly do [like inserting the sorted elements into the third vector]
+// 5, Finally, copy the elements from nums vector to the nums1 vector and return.
+// Time Complexity: O(m+n) but Space Complexity -> O(m+n)
+    
 // WE'LL BE USING THE REVERSE SORTING METHOD.
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
         
